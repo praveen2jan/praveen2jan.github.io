@@ -7,50 +7,62 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
         }
         header {
             text-align: center;
-            background-color: #2c3e50;
+            background-color: #1e3d58;
             color: white;
-            padding: 20px 0;
-            margin-bottom: 20px;
+            padding: 30px 0;
+            font-size: 1.2em;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
         section {
             background: white;
-            padding: 20px;
-            margin: 10px auto;
-            max-width: 800px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
         h2 {
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 5px;
+            border-bottom: 3px solid #1e3d58;
+            padding-bottom: 8px;
+            color: #1e3d58;
         }
         ul {
             text-align: left;
-            list-style-type: square;
-            padding-left: 20px;
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        ul li::before {
+            content: '\2022';
+            color: #1e3d58;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
         a {
-            color: #3498db;
+            color: #007bff;
             text-decoration: none;
+            font-weight: bold;
         }
         a:hover {
             text-decoration: underline;
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background: #2c3e50;
+            padding: 15px;
+            background: #1e3d58;
             color: white;
-            margin-top: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -59,6 +71,11 @@
         <h1>Praveen Kumar</h1>
         <p>Senior Software Engineer | Java | Spring Boot | AWS</p>
     </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m a backend software developer with 9+ years of experience building reliable, scalable, and efficient systems that keep businesses running smoothly. I love tackling complex problems, simplifying them, and turning ideas into real-world solutions that make a difference.</p>
+    </section>
     
     <section id="experience">
         <h2>Experience</h2>
@@ -72,6 +89,7 @@
             <li>Built several shared services from scratch, including automatic ticket assignment, rule engines, feature flag management, and business hours calculations.</li>
             <li>Handled multiple roles, including Production On-Call, Staging Operations, and L3 Engineer, ensuring critical bug resolutions.</li>
         </ul>
+        
         <h3>Envestnet Yodlee - Member of Technical Staff (Oct 2017 - Dec 2021)</h3>
         <ul>
             <li>Developed high-performance data aggregation platform supporting thousands of web scraping agents.</li>
@@ -79,17 +97,24 @@
             <li>Enhanced the Issue Analyzer Tool (Juggernaut) by automating several redundant tasks.</li>
             <li>Designed and scaled solutions to handle high transaction volumes efficiently.</li>
         </ul>
+        
         <h3>Oracle Financial Services Software - Associate Consultant (Sept 2015 - Sept 2017)</h3>
         <ul>
             <li>Worked on core banking modules for Shinsei Bank, Japan.</li>
             <li>Created monitoring dashboards and managed development and testing environments.</li>
             <li>Automated deployment cycles and streamlined environment preparation.</li>
         </ul>
+
+        <h3>Oracle Retail - Project Intern (Jun 2014 - Nov 2014)</h3>
+        <ul>
+            <li>Worked as a Software Development Intern in the Oracle Retail Merchandising Team (ORMS) team at Oracle Retail Global Business Unit, Bangalore.</li>
+            <li>Designed and implemented APIs enabling CRUD operations via spreadsheet uploads to RMS base tables, alongside adding functionality for seamless bulk retail data extraction and insertion.</li>
+        </ul>
     </section>
     
     <section id="education">
         <h2>Education</h2>
-        <p>Bachelor of Technology in Computer Science, IIITDM Jabalpur (2011-2015) | CGPA: 7.9</p>
+        <p><strong>Bachelor of Technology in Computer Science</strong>, IIITDM Jabalpur (2011-2015) | CGPA: 7.9</p>
     </section>
     
     <section id="skills">
@@ -118,7 +143,6 @@
         <p>Email: <a href="mailto:praveenkumar.iiitdmj@gmail.com">praveenkumar.iiitdmj@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/praveen2jan">github.com/praveen2jan</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/thepraveenkumar">linkedin.com/in/thepraveenkumar</a></p>
-        <p>Phone: <a href="tel:+918989748602">+91-8989748602</a></p>
     </section>
     
     <footer>
